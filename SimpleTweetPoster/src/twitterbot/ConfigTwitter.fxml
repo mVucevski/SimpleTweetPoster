@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="593.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="twitterbot.ConfigTwitterController">
+   <children>
+      <HBox prefHeight="46.0" prefWidth="600.0" spacing="10.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="155.0" text="Consumer Key (API Key)">
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="textFieldAPIKey" prefHeight="25.0" prefWidth="369.0" text="*********************">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </TextField>
+         </children>
+         <padding>
+            <Insets left="10.0" top="10.0" />
+         </padding>
+      </HBox>
+      <HBox prefHeight="46.0" prefWidth="600.0" spacing="10.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="155.0" text="Consumer Secret (API Secret)">
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="textFieldAPISecret" prefHeight="25.0" prefWidth="369.0" text="******************************************" />
+         </children>
+         <padding>
+            <Insets left="10.0" top="10.0" />
+         </padding>
+      </HBox>
+      <HBox prefHeight="46.0" prefWidth="600.0" spacing="10.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="155.0" text="Access Token">
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="textFieldToken" prefHeight="25.0" prefWidth="369.0" text="**************************************************" />
+         </children>
+         <padding>
+            <Insets left="10.0" top="10.0" />
+         </padding>
+      </HBox>
+      <HBox prefHeight="46.0" prefWidth="600.0" spacing="10.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="155.0" text="Access Token Secret">
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="textFieldTokenSecret" prefHeight="25.0" prefWidth="369.0" text="******************************************" />
+         </children>
+         <padding>
+            <Insets left="10.0" top="10.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#saveButtonClick" prefHeight="25.0" prefWidth="131.0" text="Save" />
+            <Button mnemonicParsing="false" onAction="#loadConfigButtonClick" prefHeight="25.0" prefWidth="131.0" text="Load from text file" />
+         </children>
+         <VBox.margin>
+            <Insets top="15.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+</VBox>

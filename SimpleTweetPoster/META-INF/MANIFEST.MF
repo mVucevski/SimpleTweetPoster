@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Class-Path: C:\Users\Vucevski\IdeaProjects\SimpleTweetPoster\src\twitt
+ erbot
+Main-Class: Main
+
